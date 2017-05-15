@@ -1,0 +1,78 @@
+﻿@using VMRepo;
+@model List<Forside>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@foreach (Forside f in Model)
+{
+    <header>
+        <div class="mydiv">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1 id="homeHeading">Nice to know</h1>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="mydiv">
+        <section class="bg-primary" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">Velkommen</h2>
+                        <hr class="light">
+                        <p class="text-faded">
+                            @f.VelkommenTekst
+
+                        </p>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="mydiv">
+        <section class="bg-grey" id="#">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Uddannelserne på VID Medie</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-8 ">
+
+                        <p>
+                            Uanset om du går på 3D College eller ej, tager du en uddannelse på Vid Medie, der er en del af Viden Djurs.
+                            Vi har to uddannelser: Web Integrator og digital media. Begge uddannelser er erhvervsuddannelser.
+                        </p>
+
+                        <p>
+                            Web Integrator tager 1 og 9 måneder og består af et grundforløb og et hovedforløb.
+                            På web Integrator skal man ikke have læreplads for at komme på hovedforløbet.
+                        </p>
+                        <p>Digital media består af et grundforløb på 20 uger og et hovedforløb på 3 år. For at komme på hovedforløbet skal du have en læreplads. På hovedforløbet er der to specialer: Multimedie animator og multimedie Integrator. </p>
+                        <p>
+                            WEBit Aarhus er vores afdeling i Aarhus. Her kan man tage hovedforløbet på Webintegrator. Derudover varetages skoleundervisningen på MultimedieIntegrator også her.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+}
+
