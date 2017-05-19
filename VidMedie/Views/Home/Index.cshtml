@@ -1,27 +1,33 @@
 ﻿@using VMRepo;
-@model List<Velkommen>
+@using VidMedie.ViewModels;
+@*@model List<Velkommen>*@
+
+@model ForsideVM
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @{
-    VelkommenFac vf = new VelkommenFac();
-    // GET: Home
-    var mod = vf.GetAll();
     Velkommen velkommen = new Velkommen();
-    foreach (var m in mod)
-    {
-        velkommen = m;
-    }
+    velkommen = Model.velkommentext;
     Html.RenderPartial("VelkomstText", velkommen);
 }
 
-
+@{
+    Uddannelse uddannelse = new Uddannelse();
+    uddannelse = Model.uddannelsetext;
+    Html.RenderPartial("UddannelsesText", uddannelse);
+}
+@{
+    VejledningOgStotte vejledningogstotte = new VejledningOgStotte();
+    vejledningogstotte = Model.Vejledningogstottetext;
+    Html.RenderPartial("VejledningOgStotteText", vejledningogstotte);
+}
     
 
 
-@foreach (Velkommen v in Model)
+@*@foreach (Velkommen v in Model)
     {
 
 
@@ -62,5 +68,5 @@
 
     
 
-}
+}*@
 
