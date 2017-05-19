@@ -1,32 +1,30 @@
 ﻿@using VMRepo;
-@model List<Forside>
+@model List<Velkommen>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@{
+    VelkommenFac vf = new VelkommenFac();
+    // GET: Home
+    var mod = vf.GetAll();
+    Velkommen velkommen = new Velkommen();
+    foreach (var m in mod)
+    {
+        velkommen = m;
+    }
+    Html.RenderPartial("VelkomstText", velkommen);
+}
 
-@foreach (Forside f in Model)
-{
+
     
-<div class="mydiv">
-        <section class="bg-primary" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Velkommen</h2>
-                        <hr class="light">
-                        <p class="text-faded">
-                            @f.VelkommenTekst
 
-                        </p>
 
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+@foreach (Velkommen v in Model)
+    {
+
+
 
     <div class="mydiv">
         <section class="bg-grey" id="#">
@@ -61,6 +59,8 @@
 
         </section>
     </div>
+
+    
 
 }
 

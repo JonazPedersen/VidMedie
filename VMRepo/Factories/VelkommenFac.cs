@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace VMRepo
 {
-    public class Forside
+    public class VelkommenFac : AutoFac<Velkommen>
     {
-        public int ID { get; set; }
-        public string VelkommenTekst { get; set; }
     }
 }

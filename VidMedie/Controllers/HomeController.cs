@@ -5,15 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 using VMRepo;
 
-namespace VidMedie.Controllers
+namespace VidMedie
 {
     public class HomeController : Controller
     {
-        ForsideFac ff = new ForsideFac();
+        VelkommenFac vf = new VelkommenFac();
         // GET: Home
         public ActionResult Index()
         {
-            return View(ff.GetAll());
+            
+            return View(vf.GetAll());
         }
     }
 }

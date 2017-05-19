@@ -43,8 +43,10 @@
     <Compile Include="Duser\AutoFac.cs" />
     <Compile Include="Duser\Conn.cs" />
     <Compile Include="Duser\Mapper.cs" />
-    <Compile Include="Factories\ForsideFac.cs" />
-    <Compile Include="Models\Forside.cs" />
+    <Compile Include="Factories\UddannelseFac.cs" />
+    <Compile Include="Factories\VelkommenFac.cs" />
+    <Compile Include="Models\Uddannelse.cs" />
+    <Compile Include="Models\Velkommen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
