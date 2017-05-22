@@ -24,6 +24,11 @@
     vejledningogstotte = Model.Vejledningogstottetext;
     Html.RenderPartial("VejledningOgStotteText", vejledningogstotte);
 }
+@{
+    KontaktLaereren kontaktlaereren = new KontaktLaereren();
+    kontaktlaereren = Model.kontaktlaererentext;
+    Html.RenderPartial("KontaktLaererenText", kontaktlaereren);
+}
     
 
 

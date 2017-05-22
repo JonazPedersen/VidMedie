@@ -19,11 +19,13 @@ namespace VidMedie
             VelkommenFac vf = new VelkommenFac();
             UddannelseFac uf = new UddannelseFac();
             VejledningOgStotteFac vsf = new VejledningOgStotteFac();
+            KontaktLaererenFac klf = new KontaktLaererenFac();
             var viewmodel = new ForsideVM();
 
             viewmodel.velkommentext = vf.Get(1);
             viewmodel.uddannelsetext = uf.Get(1);
             viewmodel.Vejledningogstottetext = vsf.Get(1);
+            viewmodel.kontaktlaererentext = uf.Get(1);
 
             //@{
             //     VelkommenFac vf = new VelkommenFac();

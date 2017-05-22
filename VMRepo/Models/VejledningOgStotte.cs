@@ -11,7 +11,7 @@ namespace VMRepo
         public int ID { get; set; }
         public string Studievejledning { get; set; }
         public string SpecielStotte { get; set; }
-        //public string Kontaktlaereren { get; set; }
+        public string Kontaktleareren { get; set; }
         public string Ungdomskort { get; set; }
         public string Jan { get; set; }
         public string Anne { get; set; }

@@ -43,9 +43,11 @@
     <Compile Include="Duser\AutoFac.cs" />
     <Compile Include="Duser\Conn.cs" />
     <Compile Include="Duser\Mapper.cs" />
+    <Compile Include="Factories\KontaktLaererenFac.cs" />
     <Compile Include="Factories\UddannelseFac.cs" />
     <Compile Include="Factories\VejledningOgStotteFac.cs" />
     <Compile Include="Factories\VelkommenFac.cs" />
+    <Compile Include="Models\KontaktLaereren.cs" />
     <Compile Include="Models\Uddannelse.cs" />
     <Compile Include="Models\VejledningOgStotte.cs" />
     <Compile Include="Models\Velkommen.cs" />

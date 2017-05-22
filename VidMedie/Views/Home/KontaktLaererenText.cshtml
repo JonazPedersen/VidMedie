@@ -1,0 +1,39 @@
+﻿@model VMRepo.KontaktLaereren
+<div class="mydiv">
+    <section id="#">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h2 class="text-center">KONTAKTLÆREREN</h2>
+                    <p>
+                        <b>Ungdomskonsulenterne</b>
+                    </p>
+                    <p>
+                        @Model.Ungdomskonsulenterne
+
+                        @*I Norddjurs Kommune er der ansat ungdomskonsulenter. Ungdomskonsulenterne kan hjælpe dig hvis du fx:
+                        <br />
+                        • Har det svært i skolen eller derhjemme<br />
+                        • Gerne vil finde en fritidsaktivitet • Har brug for en til at tage med dig på kommunen<br />
+                        • Har lavet noget kriminelt og fx har brug for en til at tage med dig på politistationen<br />
+                        • Tager stoffer eller drikker meget og gerne vil holde op
+                        <br />*@
+                    @*<p>Konsulenterne er en del af UngNorddjurs og du kan læse mere om deres tilbud på ungnorddjurs.dk. Du kan også ringe på 8632 4626.</p>*@
+                    <p> <b>Sundung.dk</b><br />@Model.Sundung </p>
+                    <p><b>Åben rådgivning</b><br />@Model.Raadgivning</p>
+
+                    <br />
+                    <p><b>Rusmiddelcenteret</b><br /></p>
+
+                    <p>
+                       @Model.Rusmiddelcenteret
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>

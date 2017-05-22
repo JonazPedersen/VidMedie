@@ -261,6 +261,7 @@
     <Content Include="Views\Home\VelkomstText.cshtml" />
     <Content Include="Views\Home\UddannelsesText.cshtml" />
     <Content Include="Views\Home\VejledningOgStotteText.cshtml" />
+    <Content Include="Views\Home\KontaktLaererenText.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
