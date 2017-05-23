@@ -25,7 +25,7 @@ namespace VidMedie
             viewmodel.velkommentext = vf.Get(1);
             viewmodel.uddannelsetext = uf.Get(1);
             viewmodel.Vejledningogstottetext = vsf.Get(1);
-            viewmodel.kontaktlaererentext = uf.Get(1);
+            viewmodel.kontaktlaererentext = klf.Get(1);
 
             //@{
             //     VelkommenFac vf = new VelkommenFac();

@@ -1,6 +1,6 @@
 ﻿@model VMRepo.KontaktLaereren
 <div class="mydiv">
-    <section id="#">
+    <section class="bg-grey" id="#">
         <div class="container">
             <div class="row">
 
@@ -10,7 +10,7 @@
                         <b>Ungdomskonsulenterne</b>
                     </p>
                     <p>
-                        @Model.Ungdomskonsulenterne
+                        @Html.Raw(Model.Ungdomskonsulenterne)
 
                         @*I Norddjurs Kommune er der ansat ungdomskonsulenter. Ungdomskonsulenterne kan hjælpe dig hvis du fx:
                         <br />
@@ -27,7 +27,7 @@
                     <p><b>Rusmiddelcenteret</b><br /></p>
 
                     <p>
-                       @Model.Rusmiddelcenteret
+                       @Html.Raw(Model.Rusmiddelcenteret)
                     </p>
 
 
