@@ -1,0 +1,53 @@
+﻿@model VMRepo.LaerePlads
+<div class="mydiv">
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Læreplads</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="text-center">Virksomhedskonsulent</h3>
+                    <p>
+                       @Html.Raw(Model.Virksomhedskonsulent)
+                    </p>
+
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="text-center">Praktik i udlandet (PIU)</h3>
+                    <p>
+                        @Html.Raw(Model.Praktik)
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="personmedtext">
+                        <img src="~/Content/personer/@Model.Billede1" />
+
+                        @Html.Raw(Model.Info1)
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="personmedtext">
+                        <img src="~/Content/personer/@Model.Billede2" />
+                        
+                        @Html.Raw(Model.Info2)
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</div>

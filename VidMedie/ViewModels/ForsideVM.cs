@@ -12,5 +12,8 @@ namespace VidMedie.ViewModels
         public Uddannelse uddannelsetext { get; set; }
         public VejledningOgStotte Vejledningogstottetext { get; set; }
         public KontaktLaereren kontaktlaererentext { get; set; }
+        public AkutHjaelp akuthjaelptext { get; set; }
+        public UddannelsesVejledning uddannelsesvejledningtext { get; set; }
+        public LaerePlads laerepladstext { get; set; }
     }
 }

@@ -29,6 +29,23 @@
     kontaktlaereren = Model.kontaktlaererentext;
     Html.RenderPartial("KontaktLaererenText", kontaktlaereren);
 }
+@{
+    AkutHjaelp akuthjaelp = new AkutHjaelp();
+    akuthjaelp = Model.akuthjaelptext;
+    Html.RenderPartial("AkutHjaelpText", akuthjaelp);
+}
+
+@{
+    UddannelsesVejledning uddannelsesvejledning = new UddannelsesVejledning();
+    uddannelsesvejledning = Model.uddannelsesvejledningtext;
+    Html.RenderPartial("UddannelsesVejledningText", uddannelsesvejledning);
+}
+
+@{
+    LaerePlads laereplads = new LaerePlads();
+    laereplads = Model.laerepladstext;
+    Html.RenderPartial("LaerePladsText", laereplads);
+}
     
 
 
